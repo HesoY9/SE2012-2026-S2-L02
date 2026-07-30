@@ -1,3 +1,5 @@
+package models;
+
 public class Course {
     private String ccode;
     private String title;
