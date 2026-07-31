@@ -1,6 +1,10 @@
 package models;
 
+/**
+ * Represents a student in the system.
+ */
 public class Student {
+     
     private String id;
     private String name;
     private Course[] courses;
@@ -16,6 +20,7 @@ public class Student {
         this.name = name;
         this.courses = new Course[10];
     }
+
     /*
      * Returns the ID of the student.
      * @return the ID of the student
@@ -23,6 +28,7 @@ public class Student {
     public String getId() {
         return id;
     }
+
     /*
      * Returns the name of the student.
      * @return the name of the student
@@ -30,6 +36,7 @@ public class Student {
     public String getName() {
         return name;
     }
+
     /*
      * Enrolls the student in the specified course.
      * @param course the course to enroll in
@@ -44,6 +51,7 @@ public class Student {
             System.out.println("Cannot enroll in more than 10 courses.");
         }
     }
+
     /*
      * Returns the array of courses the student is enrolled in.
      * @return the array of courses
@@ -51,6 +59,7 @@ public class Student {
     public Course[] getCourses() {
         return courses;
     }
+
     /*
      * Returns the number of courses the student is enrolled in.
      * @return the number of courses
@@ -58,6 +67,7 @@ public class Student {
     public int getCourseCount() {
         return courseCount;
     }
+
     /*
      * Returns a string representation of the student.
      * @return a string representation of the student

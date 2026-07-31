@@ -2,7 +2,9 @@ package services;
 
 import models.Course;
 import models.Student;
-
+/**
+ * Manages student enrollment in courses.
+ */
 public class enrollmentManager {
     /*
      * Enrolls a student in a course.

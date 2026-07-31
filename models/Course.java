@@ -1,5 +1,7 @@
 package models;
-
+/**
+ * Represents a course in the system.
+ */
 public class Course {
     private String ccode;
     private String title;
@@ -8,6 +10,7 @@ public class Course {
         this.ccode = ccode;
         this.title = title;
     }
+    
     /*
      * Returns the code of the course.
      * @return the code of the course

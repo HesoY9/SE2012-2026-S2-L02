@@ -5,10 +5,11 @@ import models.Course;
 import models.Student;
 import services.enrollmentManager;
 
+/**
+ * Main class for the student enrollment application.
+ */
 public class Main {
-    /*
-     * Main method to run the student enrollment application.
-     */
+    
     private static int studentCount = 0;
     private static Student[] students = new Student[100];
     private static enrollmentManager enroller = new enrollmentManager();
@@ -81,6 +82,7 @@ public class Main {
 
         scn.close();
     }
+    
     /*
      * Searches for a student by ID and displays their information.
      * @param id the ID of the student to search for
@@ -101,6 +103,7 @@ public class Main {
         }
         System.out.println("Student not found.");
     }
+
     /*
      * Sorts the list of students by their names in ascending order.
      * @param list the array of students to sort
