@@ -21,7 +21,7 @@ public class Main {
          * Main loop to display menu and handle user input.
          */
         while (!exit) {
-            System.out.println("1. Enroll a student in a course");
+            System.out.println("\n1. Enroll a student in a course");
             System.out.println("2. List all students");
             System.out.println("3. Search for a student by ID");
             System.out.println("4. Sort students by name");
@@ -32,7 +32,7 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.print("Enter student ID: ");
+                    System.out.print("\nEnter student ID: ");
                     String id = scn.nextLine();
                     System.out.print("Enter student name: ");
                     String name = scn.nextLine();
@@ -58,19 +58,19 @@ public class Main {
                     }
                     break;
                 case 2:
-                    System.out.println("Listing all students:");
+                    System.out.println("\nListing all students:");
                     for (int i = 0; i < studentCount; i++) {
                         System.out.println(students[i].toString());
                     }
                     break;
                 case 3:
-                    System.out.print("Enter student ID to search: ");
+                    System.out.print("\nEnter student ID to search: ");
                     String searchId = scn.nextLine();
                     searchStudentById(searchId);
                     break;
                 case 4:
                     sortStudentsByName(students, studentCount);
-                    System.out.println("Students sorted by name.");
+                    System.out.println("\nStudents sorted by name.");
                     break;
                 case 5:
                     exit = true;
